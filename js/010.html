@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGANDO HORAS </title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <p id="hrs"></p>
+    </main>
+    <script>
+        var hrs = document.querySelector('p#hrs');
+        var data = new Date();
+        var horas =  data.getHours();
+
+        if (horas >= 0 && horas < 6) {
+            hrs.innerHTML = 'BOA MADRUGADA!!';
+        } else if (horas >= 6 && horas < 12) {
+            hrs.innerHTML = 'BOM DIA!!';
+        } else if (horas >= 12 && horas < 18) {
+            hrs.innerHTML = 'BOA TARDE!!';
+        } else {
+            hrs.innerHTML = 'BOA NOITE!!';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION PARAMETRO  </title><link rel="stylesheet" href="../style.css">
+</head>
+<body>
+        <h1>FUNCTION WHITH PARAMETER</h1>
+    <main><section>
+        
+            function parimp(n) <br>{
+                if (n % 2 == 0) <br>{
+                    return ('par');<br>
+                }else{<br>
+                    return ("impar");
+                }br
+            }
+            let res =   parimp(10);<br>
+            console.log(res) <br>
+    </section>
+<section>
+    
+            function soma(n1=0,n2=0 ) <br>{
+                return n1 + n2;<br>
+            }
+            console.log(soma(2,2)) <br>
+    
+            function fat(n) <br> {
+                let fat = 1 <br>
+                for(let  c = n;c>1;c-- ) <br>{
+                    fat*=c<br>
+                }
+                 return fat<br>
+                }
+                console.log(fat(5))
+</section>
+            <br>
+        <section>
+            function fatorial(n)<br>{
+                if(n==1)<br>{
+                    return 1 ;
+                }<br>else{
+                    return n * fatorial(n-1)
+                }
+            }
+            console.log(fatorial(5))
+        </section>
+        <br>
+    </main>
+
+
+    <script>
+            function parimp(n){
+                if (n % 2 == 0){
+                    return ('par');
+                }else{
+                    return ("impar");
+                }
+            }  
+            let res =   parimp(10);
+            console.log(res)
+
+            function soma(n1=0,n2=0 ){
+                return n1 + n2;
+            }
+            console.log(soma(2,2))
+   
+            function fat(n){
+                let fat = 1
+                for(let  c = n;c>1;c-- ){
+                    fat*=c
+                }
+                 return fat
+                }
+                console.log(fat(5))
+
+            function fatorial(n){
+                if(n==1){
+                    return 1 ;
+                }else{
+                    return n * fatorial(n-1)
+                }
+            }
+            console.log(fatorial(5))
+ </script>
+</body>
+</html>

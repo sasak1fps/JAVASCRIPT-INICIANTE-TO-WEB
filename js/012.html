@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="h">USANDO WHILE</h1>
+            <p id="counter"></p> <!-- Add a paragraph element to display the counter value -->
+        </section>
+    </main>
+    <script>
+        var text = document.querySelector('h1#h');
+        var counterElement = document.getElementById('counter'); // Reference to the paragraph element
+        var c = 1;
+
+        while (c <= 6) {
+            console.log(c);
+            counterElement.textContent = 'Counter: ' + c; // Update the content of the paragraph
+            c++;
+        }
+    </script>
+</body>
+</html>

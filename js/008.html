@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDIÇÃO SIMPLES</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <h1>VERIFICANDO VELOCIDADE</h1>
+        <label for="vel">VELOCIDADE:</label>
+        <input type="number" name="vel" id="vel">
+        <input type="submit" value="ENVIAR" onclick="clicar()">
+    </main>
+    <section id="res"></section>
+    <script>
+        function clicar() {
+            var vel = document.getElementById("vel").value;
+            var res = document.querySelector('section#res');
+            if (vel <= 80) {
+                res.innerHTML = `SUA VELOCIDADE é ${vel}km. DIRIJA COM CUIDADO.`;
+                res.innerHTML =`<p>USE SEMPRE CINTO DE SEGURANÇA</p>`
+            } else {
+                res.innerHTML = `SUA VELOCIDADE É ${vel}km, VOCÊ FOI MULTADO.`;
+                res.innerHTML =`<p>USE SEMPRE CINTO DE SEGURANÇA é DIRIJA COM CUIDADO</p>`
+            }
+        }
+    </script>
+</body>
+</html>

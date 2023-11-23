@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDIÇÃO ANINHADA</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <label for="voto">QUAL SUA IDADE:<strong> <span id="sp">0</span></strong></label>
+        <input type="range" name="voto" id="voto" min="0" max="100" step="1" oninput="mudar()">
+        <input type="submit" value="ENVIAR" onclick="clik()">
+    </main>
+    <script>
+        function mudar() {
+            let voto = document.getElementById('voto');
+            let sp = document.getElementById('sp');
+            sp.innerText = voto.value;
+
+            if (voto.value < 18) {
+                sp.innerText = `VOCÊ TEM ${voto.value} ANOS E NÃO PODE VOTAR`;
+            } else if (voto.value >= 18 && voto.value <= 75) {
+                sp.innerText = `VOCÊ TEM ${voto.value} ANOS E PODE VOTAR`;
+            } else if (voto.value > 75) {
+                sp.innerText = `VOCÊ TEM ${voto.value} ANOS E O VOTO É OPCIONAL`;
+            }
+        }
+
+        function clik() {
+            // If you need to do something when the submit button is clicked, you can add
+        }
+    </script>
+</body>
+</html>

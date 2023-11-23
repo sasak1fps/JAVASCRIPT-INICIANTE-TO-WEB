@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH</title><link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <li>0=DOMINGO</li><br>
+        <li>1=SEGUNDA</li><br>
+        <li>2=TERÇA</li><br>
+        <li>3=QUARTA</li><br>
+        <li>4=QUINTA</li><br>
+        <li>5=SEXTA</li><br>
+        <li>6=SABADO</li><br>
+        <section>
+            <p id="p"></p>
+        </section>
+    </main>
+    <script>
+        var p = document.querySelector('p#p');
+        var semana = new Date().getDay()
+        switch (semana) {
+            case 0:
+                p.innerHTML = `HOJE È DOMINGO`
+                break;
+
+                case 1:
+                p.innerHTML = `HOJE È SEGUNDA `
+                break;
+
+                case 2:
+                p.innerHTML = `HOJE È TERÇA `
+                break;
+
+                case 3:
+                p.innerHTML = `HOJE È  QUARTA`
+                break;
+
+                case 4:
+                p.innerHTML = `HOJE È QUINTA `
+                break;
+
+                case 5:
+                p.innerHTML = `HOJE È  SEXTA`
+                break;
+
+                case 6:
+                p.innerHTML = `HOJE È  SABADO`
+                break;
+  
+            default:
+                p.innerHTML = "erro"
+                break;
+        }
+
+    </script>
+</body>
+</html>

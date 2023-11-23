@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRENDENDO JS</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="main" onload= "document.getElementById('main').style.backgroundColor='wheat';" onresize="console.log('houve redimencionamento')">
+    <h1> APRENDENDO JAVASCRiPT</h1>
+    <p id = "valor"></p>
+    <p id="texto"></p>
+    <button onclick="hellow()">clique</button>
+    <p><script>document.writeln('escrito com documente.write :)') </script></p>
+    <script src="001.js"></script>
+    <p>
+ <p><button onclick="eventoclick()">click here</button></p>
+<p><button ondblclick="eventofbclick()">double clickhere</button> </p><br>
+
+<select id="itens" onchange="mudou()">
+    <option value="1">valor1</option>
+    <option value="2">valor2</option>
+    <option value="3">valor3</option>
+    <option value="4">valor4</option>
+</select>
+
+<br>
+<div  id="test" style="margin: auto auto; width: 50%; height: 200px; background: rgba(22, 22, 224, 0.384);" onmouseover="vermelho()" onmouseleave="green()"></div><br>
+
+<input type="text" name="txt" id="txt" style="padding: 80px; font-size: 40px; width: 500px;" placeholder="digite algo" onfocus="foco()" onchange="mudou()" onblur="desfoco()">
+
+
+<input type="text" name="txt" id="tx" style="padding: 80px; font-size: 40px; width: 500px;border-radius: 20px; box-shadow: 5px 5px 5px black;" placeholder="digi" onkeypress="press()" onkeydown="down()" onkeyup="up()" >
+<br>
+
+<input type="text" name="" id="n" style="padding: 50px; font-size: 40px;margin-top: 50px; " placeholder = "digite seu nome" >
+<br>
+<p id="teste"> </p>
+<button onclick="verificar()" style="padding: 50px; ">enviar</button>
+
+<br><br>
+<input type="text" name="" id="cores" width="300px" >
+<button onclick="cor()">cores</button>
+<br><br>
+
+<p id ="semana"></p>
+<button onclick="semana()">semana</button>
+
+<div id="num"></div>
+<br>
+<select name="ano" id="ano" class="ano" >
+    <option selected disabled>selecione ano<option>
+</select>
+<br><br><br><br>
+
+
+
+<h1>tempo 5s</h1>
+<h2 id="tempo">0</h2>
+<button onclick="ativar()" class="start" style="background-color: greenyellow; width: 300px; height: 300px;">começat</button>
+<button onclick="desativar()" class="stop" style="background-color: red;width: 300px;height: 300px;">desativar</button>
+
+<br><br>
+<h1>tempo 2</h1>
+<h2 id="tt">00</h2>
+<button onclick="ativa()" class="start" style="background-color: greenyellow; width: 300px; height: 300px;">começat</button>
+<button onclick="desativa()" class="stop" style="background-color: red;width: 300px;height: 300px;">desativar</button>
+<br><br>
+
+<h1>tepom negativo</h1>
+<h2 id="nega">10</h2>
+<button onclick="ati()" class="start" style="background-color: greenyellow; width: 300px; height: 300px;">começat</button>
+<button onclick="desati()" class="stop" style="background-color: red;width: 300px;height: 300px;">desativar</button>
+<br><br><br>
+
+<h1><strong><b>JSON</b></strong></h1>
+<pre id="area"> </pre>
+<p id="ara"> </p>
+
+<button type="reset"><a href="../html/003.html">.</a></button>
+
+</body>
+</html>

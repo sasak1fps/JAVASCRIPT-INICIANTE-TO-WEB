@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENT</title><link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div style="background: yellow; width: 300px; text-align: center; height: 300px; margin-top: 200px;" id="oi" onclick="clicar()" onkeypress="entra()" onmouseleave="sair()" onmouseover="mover()">
+        texto
+    </div>
+    <script>
+         function clicar(){
+          let a =  document.getElementById("oi");
+          a.style.background = 'red'
+         }
+         function mover(){
+          let a =  document.getElementById("oi");
+          a.style.background = 'black'
+         }
+         function entrar(){
+          let a =  document.getElementById("oi");
+          a.style.background = 'pink'
+         }
+         function sair(){
+          let a =  document.getElementById("oi");
+          a.style.background = 'green'
+         }
+    </script>
+</body>
+</html>
